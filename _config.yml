@@ -2,9 +2,9 @@
 title: "Clemz Student Scoreboard"
 description: "Mathematics and Science Scoreboard for RRCR, PJPA, and DLA."
 baseurl: "/Clemz-New-Scoreboard"  # Repository name
-url: "https://clemzclems.github.io"
+url: "https://clemzclems.github.io"  # GitHub Pages base URL
 markdown: kramdown
-theme: minima
+theme: minima  # Optional, but good to specify a theme
 
 # Site Branding
 logo: "/assets/images/logo.png"         # School logo (200x200px recommended)
