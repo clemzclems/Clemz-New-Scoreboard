@@ -1,5 +1,5 @@
 ---
-title: "Rosamby Royal Classroom Results"
+title: "Clemz Academy Results"
 layout: default
 ---
 
