@@ -1,3 +1,21 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+th {
+    background-color: #007ACC;
+    color: #fff;
+}
+
+
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
