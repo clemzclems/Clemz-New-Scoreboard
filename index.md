@@ -9,45 +9,38 @@ Explore the results of different classes for the following schools:
 ---
 
 ## **Rosamby Royal Classroom (RRCR)**
-- [JSS 1 Mathematics](./RRCR tables/jss1-mathematics.md)
-- [JSS 2 Mathematics](./RRCR tables/jss2-mathematics.md)
-- [JSS 3 Mathematics](./RRCR tables/jss3-mathematics.md)
-- [SSS 1 Mathematics](./RRCR tables/sss1-mathematics.md)
-- [SSS 2 Mathematics](./RRCR tables/sss2-mathematics.md)
-- [SSS 1 Physics](./RRCR tables/sss1-physics.md)
-- [SSS 2 Physics](./RRCR tables/sss2-physics.md)
+- [JSS 1 Mathematics]({{ site.baseurl }}/RRCR/jss1-mathematics)
+- [JSS 2 Mathematics]({{ site.baseurl }}/RRCR/jss2-mathematics)
+- [JSS 3 Mathematics]({{ site.baseurl }}/RRCR/jss3-mathematics)
+- [SSS 1 Mathematics]({{ site.baseurl }}/RRCR/sss1-mathematics)
+- [SSS 2 Mathematics]({{ site.baseurl }}/RRCR/sss2-mathematics)
+- [SSS 1 Physics]({{ site.baseurl }}/RRCR/sss1-physics)
+- [SSS 2 Physics]({{ site.baseurl }}/RRCR/sss2-physics)
 
 ---
 
 ## **Parent & Joy Pride Academy (PJPA)**
-- [JSS 1 Mathematics](./PJPA tables/jss1-mathematics.md)
-- [JSS 2 Mathematics](./PJPA tables/jss2-mathematics.md)
-- [JSS 3 Mathematics](./PJPA tables/jss3-mathematics.md)
-- [Primary 4 Mathematics](./PJPA tables/primary4-mathematics.md)
-- [Primary 5 Mathematics](./PJPA tables/primary5-mathematics.md)
+- [JSS 1 Mathematics]({{ site.baseurl }}/PJPA/jss1-mathematics)
+- [JSS 2 Mathematics]({{ site.baseurl }}/PJPA/jss2-mathematics)
+- [Primary 4 Mathematics]({{ site.baseurl }}/PJPA/primary4-mathematics)
+- [Primary 5 Mathematics]({{ site.baseurl }}/PJPA/primary5-mathematics)
 
 ---
 
 ## **Definite Land Academy (DLA)**
-- [JSS 1 Mathematics](./DLA tables/jss1-mathematics.md)
-- [JSS 2 Mathematics](./DLA tables/jss2-mathematics.md)
-- [JSS 3 Mathematics](./DLA tables/jss3-mathematics.md)
-- [JSS 1 Basic Science](./DLA tables/jss1-basic-science.md)
-- [JSS 2 Basic Science](./DLA tables/jss2-basic-science.md)
-- [JSS 3 Basic Science](./DLA tables/jss2-basic-science.md)
-- [SSS 1 Mathematics](./DLA tables/sss1-mathematics.md)
-- [SSS 2 Mathematics](./DLA tables/sss2-mathematics.md)
-- [SSS 1 Physics](./DLA tables/sss1-physics.md)
-- [SSS 2 Physics](./DLA tables/sss2-physics.md)
+- [JSS 1 Mathematics]({{ site.baseurl }}/DLA/jss1-mathematics)
+- [JSS 2 Mathematics]({{ site.baseurl }}/DLA/jss2-mathematics)
+- [SSS 1 Physics]({{ site.baseurl }}/DLA/sss1-physics)
+- [SSS 2 Physics]({{ site.baseurl }}/DLA/sss2-physics)
 
 ---
 
 ## **Stay Connected**
-- [Facebook](https://www.facebook.com/profile.php?id=100004792087165)
-- [Instagram](https://www.instagram.com/clemzclems/)
-- [Twitter](https://x.com/DrClem88)
-- [YouTube](https://www.youtube.com/@MathCraft3D)
-- [Donate via PayPal](https://paypal.me/clemzclems?country.x=AE&locale.x=en_US)
+- [Facebook]({{ site.author.social.facebook }})
+- [Instagram]({{ site.author.social.instagram }})
+- [Twitter]({{ site.author.social.twitter }})
+- [YouTube]({{ site.author.social.youtube }})
+- [Donate via PayPal]({{ site.author.social.paypal }})
 
 ---
 
@@ -70,7 +63,6 @@ Interested in joining or submitting results? Fill out the form below:
   <select id="class" name="class">
     <option value="jss1">JSS 1</option>
     <option value="jss2">JSS 2</option>
-    <option value="jss3">JSS 3</option>
     <option value="sss1">SSS 1</option>
     <option value="sss2">SSS 2</option>
     <option value="primary4">Primary 4</option>
@@ -82,6 +74,3 @@ Interested in joining or submitting results? Fill out the form below:
 
   <button type="submit">Submit</button>
 </form>
-
----
-
