@@ -1,6 +1,6 @@
 ---
 title: "Clemz Academy Results"
-layout: home
+layout: default 
 ---
 
 # Welcome to Rosamby Royal Classroom Results  
