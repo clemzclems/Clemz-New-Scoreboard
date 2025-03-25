@@ -84,7 +84,7 @@
 
     <!-- Banner Image -->
     <div class="banner">
-        <img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="Banner Image" style="width: 100%; height: auto;">
+        <img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="Banner Image" style="width: 180%; height: auto;">
     </div>
 
     <!-- Header Section -->
@@ -98,14 +98,16 @@
 
         <!-- Navigation -->
         <nav>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/RRCR/">RRCR</a></li>
-                <li><a href="{{ site.baseurl }}/PJPA/">PJPA</a></li>
-                <li><a href="{{ site.baseurl }}/DLA/">DLA</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- Navigation -->
+<nav>
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="{{ site.baseurl }}/" aria-label="Go to Home Page">Home</a></li>
+        <li><a href="{{ site.baseurl }}/RRCR/" aria-label="Go to RRCR Page">RRCR</a></li>
+        <li><a href="{{ site.baseurl }}/PJPA/" aria-label="Go to PJPA Page">PJPA</a></li>
+        <li><a href="{{ site.baseurl }}/DLA/" aria-label="Go to DLA Page">DLA</a></li>
+        <li><a href="#contact" aria-label="Go to Contact Section">Contact</a></li>
+    </ul>
+</nav>
 
         <!-- Dark Mode Toggle Button -->
         <button id="dark-mode-toggle">Toggle Dark Mode</button>
