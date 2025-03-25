@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSS 1 ROSAMBY Student Scores</title>
+<style>
+@media only screen and (orientation: portrait) {
+/* styles for portrait orientation */
+}
 
+```@media only screen and (orientation: landscape) {
+  /* styles for landscape orientation */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+  
+th, td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: left;
+}
+
+th {
+background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+tr:hover {
+background-color: #f2f2f2;
+}
+
+input[type="number"] {
+width: 40px;
+height: 40px;
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 5px;
+font-size: 16px;
+text-align: center;
+}
+
+#delete-data-button, #print-button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#delete-data-button:hover, #print-button:hover {
+background-color: #3e8e41;
+}
+</style>
+  
+  
+  
+  
+	<h1>JSS 1 ROSAMBY Student Scores</h1>
+	<table id="scores-table">
+		<tr>
+			<th>Name</th>
+			<th>1st Test</th>
+			<th>2nd Test</th>
+			<th>Exam</th>
+			<th>Total</th>
+		</tr>
+		<tr>
+			<td>Dominion Osahenhen</td>
+			<td><input type="number" id="first-test-1" value="8"></td>
+			<td><input type="number" id="second-test-1" value="0"></td>
+			<td><input type="number" id="exam-1" value="0"></td>
+			<td id="total-1"></td>
+		</tr>
+		<tr>
+			<td>Balogun Moses</td>
+			<td><input type="number" id="first-test-2" value="5"></td>
+			<td><input type="number" id="second-test-2" value="0"></td>
+			<td><input type="number" id="exam-2" value="0"></td>
+			<td id="total-2"></td>
+		</tr>
+		<tr>
+			<td>Anthony Evident</td>
+			<td><input type="number" id="first-test-3" value="7"></td>
+			<td><input type="number" id="second-test-3" value="0"></td>
+			<td><input type="number" id="exam-3" value="0"></td>
+			<td id="total-3"></td>
+		</tr>
+		<tr>
+			<td>Becky</td>
+			<td><input type="number" id="first-test-4" value="12"></td>
+			<td><input type="number" id="second-test-4" value="0"></td>
+			<td><input type="number" id="exam-4" value="0"></td>
+			<td id="total-4"></td>
+		</tr>
+		<tr>
+			<td>Ruman Haruna</td>
+			<td><input type="number" id="first-test-5" value="5"></td>
+			<td><input type="number" id="second-test-5" value="0"></td>
+			<td><input type="number" id="exam-5" value="0"></td>
+			<td id="total-5"></td>
+		</tr>
+		<tr>
+			<td>Abigail Russell</td>
+			<td><input type="number" id="first-test-6" value="18"></td>
+			<td><input type="number" id="second-test-6" value="0"></td>
+			<td><input type="number" id="exam-6" value="0"></td>
+			<td id="total-6"></td>
+		</tr>
+		<tr>
+			<td>Devine osayande</td>
+			<td><input type="number" id="first-test-7" value="8"></td>
+			<td><input type="number" id="second-test-7" value="0"></td>
+			<td><input type="number" id="exam-7" value="0"></td>
+			<td id="total-7"></td>
+		</tr>
+		<tr>
+			<td>Kingsley Osagie Godsfavour</td>
+			<td><input type="number" id="first-test-8" value="15"></td>
+			<td><input type="number" id="second-test-8" value="0"></td>
+			<td><input type="number" id="exam-8" value="0"></td>
+			<td id="total-8"></td>
+		</tr>
+		<tr>
+			<td>Dominion Osadolor</td>
+			<td><input type="number" id="first-test-9" value="8"></td>
+			<td><input type="number" id="second-test-9" value="0"></td>
+			<td><input type="number" id="exam-9" value="0"></td>
+			<td id="total-9"></td>
+		</tr>
+  	<tr>
+		<td>Esther Usinobun</td>
+		<td><input type="number" id="first-test-10" value="5"></td>
+		<td><input type="number" id="second-test-10" value="0"></td>
+		<td><input type="number" id="exam-10" value="0"></td>
+		<td id="total-10"></td>
+	</tr>
+	<tr>
+		<td>Devine Peter</td>
+		<td><input type="number" id="first-test-11" value="5"></td>
+		<td><input type="number" id="second-test-11" value="0"></td>
+		<td><input type="number" id="exam-11" value="0"></td>
+		<td id="total-11"></td>
+	</tr>
+	<tr>
+		<td>Treasure Girl</td>
+		<td><input type="number" id="first-test-12" value="15"></td>
+		<td><input type="number" id="second-test-12" value="0"></td>
+		<td><input type="number" id="exam-12" value="0"></td>
+		<td id="total-12"></td>
+	</tr>
+	<tr>
+		<td>Enobakhare Osamwenke</td>
+		<td><input type="number" id="first-test-13" value="15"></td>
+		<td><input type="number" id="second-test-13" value="0"></td>
+		<td><input type="number" id="exam-13" value="0"></td>
+		<td id="total-13"></td>
+	</tr>
+	<tr>
+		<td>Wisdom Uche</td>
+		<td><input type="number" id="first-test-14" value="10"></td>
+		<td><input type="number" id="second-test-14" value="0"></td>
+		<td><input type="number" id="exam-14" value="0"></td>
+		<td id="total-14"></td>
+	</tr>
+	<tr>
+		<td>Blessed Ekhator</td>
+		<td><input type="number" id="first-test-15" value="8"></td>
+		<td><input type="number" id="second-test-15" value="0"></td>
+		<td><input type="number" id="exam-15" value="0"></td>
+		<td id="total-15"></td>
+	</tr>
+	<tr>
+		<td>Marvelous Agbontaen</td>
+		<td><input type="number" id="first-test-16" value="14"></td>
+		<td><input type="number" id="second-test-16" value="0"></td>
+		<td><input type="number" id="exam-16" value="0"></td>
+		<td id="total-16"></td>
+	</tr>
+	<tr>
+		<td>Mathias Jeffrey</td>
+		<td><input type="number" id="first-test-17" value="12"></td>
+		<td><input type="number" id="second-test-17" value="0"></td>
+		<td><input type="number" id="exam-17" value="0"></td>
+		<td id="total-17"></td>
+	</tr>
+	<tr>
+		<td>Rejoice Ikechuckwu</td>
+		<td><input type="number" id="first-test-18" value="15"></td>
+		<td><input type="number" id="second-test-18" value="0"></td>
+		<td><input type="number" id="exam-18" value="0"></td>
+		<td id="total-18"></td>
+	</tr>
+	<tr>
+		<td>Treasure Osagie Eghosa</td>
+		<td><input type="number" id="first-test-19" value="5"></td>
+		<td><input type="number" id="second-test-19" value="0"></td>
+		<td><input type="number" id="exam-19" value="0"></td>
+		<td id="total-19"></td>
+	</tr>
+	  	<tr>
+<td>Christabel Ogbeifun</td>
+	<td><input type="number" id="first-test-20" value="9"></td>
+	<td><input type="number" id="second-test-20" value="0"></td>
+	<td><input type="number" id="exam-20" value="0"></td>
+	<td id="total-20"></td>
+</tr>
+<tr>
+	<td>Abhulimen Favour</td>
+	<td><input type="number" id="first-test-21" value="7"></td>
+	<td><input type="number" id="second-test-21" value="0"></td>
+	<td><input type="number" id="exam-21" value="0"></td>
+	<td id="total-21"></td>
+</tr>
+<tr>
+	<td>Destiny Agbontaen</td>
+	<td><input type="number" id="first-test-22" value="11"></td>
+	<td><input type="number" id="second-test-22" value="0"></td>
+	<td><input type="number" id="exam-22" value="0"></td>
+	<td id="total-22"></td>
+</tr>
+
+</table>
+<button id="delete-data-button">Delete Data</button>
+<button id="print-button">Print</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+// Function to update total score
+function updateTotalScore(row) {
+const firstTestScore = parseFloat(row.cells[1].children[0].value);
+const secondTestScore = parseFloat(row.cells[2].children[0].value);
+const examScore = parseFloat(row.cells[3].children[0].value);
+
+if (isNaN(firstTestScore) || isNaN(secondTestScore) || isNaN(examScore)) {
+alert("Please enter a valid number");
+return;
+}
+
+const totalScore = firstTestScore + secondTestScore + examScore;
+row.cells[4].textContent = totalScore.toFixed(2);
+
+// Save data to local storage
+const tableData = [];
+const rows = document.querySelectorAll('#scores-table tr');
+rows.forEach((row, index) => {
+if (index > 0) {
+const rowData = {
+name: row.cells[0].textContent,
+firstTestScore: row.cells[1].children[0].value,
+secondTestScore: row.cells[2].children[0].value,
+examScore: row.cells[3].children[0].value,
+totalScore: row.cells[4].textContent
+};
+tableData.push(rowData);
+}
+});
+localStorage.setItem('tableData', JSON.stringify(tableData));
+}
+
+// Load data from local storage
+if (localStorage.getItem('tableData')) {
+const tableData = JSON.parse(localStorage.getItem('tableData'));
+const rows = document.querySelectorAll('#scores-table tr');
+rows.forEach((row, index) => {
+if (index > 0) {
+row.cells[0].textContent = tableData[index - 1].name;
+row.cells[1].children[0].value = tableData[index - 1].firstTestScore;
+row.cells[2].children[0].value = tableData[index - 1].secondTestScore;
+row.cells[3].children[0].value = tableData[index - 1].examScore;
+row.cells[4].textContent = tableData[index - 1].totalScore;
+}
+});
+}
+
+// Calculate total scores
+const rows = document.querySelectorAll('#scores-table tr');
+rows.forEach((row, index) => {
+if (index > 0) {
+updateTotalScore(row);
+}
+});
+
+// Delete data button event listener
+document.getElementById('delete-data-button').addEventListener('click', () => {
+localStorage.clear();
+location.reload();
+});
+
+// Print button event listener
+document.getElementById('print-button').addEventListener('click', () => {
+const doc = new jsPDF();
+const tableHtml = document.getElementById('scores-table').outerHTML;
+doc.fromHTML(tableHtml, 15, 15);
+doc.save('scores.pdf');
+});
+
+// Update total scores on input change
+document.addEventListener('input', (event) => {
+if (event.target.tagName === 'INPUT') {
+const row = event.target.parentNode.parentNode;
+updateTotalScore(row);
+}
+});
+</script>
+</body>
+</html>
