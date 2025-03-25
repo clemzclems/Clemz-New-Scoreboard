@@ -10,6 +10,7 @@ theme: minima
 logo: "{{ site.baseurl }}/assets/images/logo.png"       # Correct image path
 favicon: "{{ site.baseurl }}/assets/images/favicon.png"  # Correct image path
 banner: "{{ site.baseurl }}/assets/images/banner.jpg"    # Correct image path
+author: "{{ site.baseurl }}/assets/images/author.jpg"    # Correct image path
 
 # Beautiful Author Info
 author:
