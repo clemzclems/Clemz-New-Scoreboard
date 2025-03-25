@@ -7,8 +7,81 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png" type="image/png">
     <script src="{{ site.baseurl }}/assets/js/script.js" defer></script>
+    <style>
+        /* Responsive Navigation Styling */
+        nav {
+            position: relative;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .nav-menu li {
+            display: inline;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #007bff;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 40px;
+                right: 20px;
+                width: 200px;
+                padding: 10px;
+                border-radius: 8px;
+            }
+
+            .nav-menu a {
+                color: white;
+                display: block;
+                margin: 10px 0;
+            }
+
+            .nav-menu a:hover {
+                color: #ffcc00;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body data-theme="light"> <!-- Default Theme -->
+
     <!-- Banner Image -->
     <div class="banner">
         <img src="{{ site.baseurl }}/assets/images/banner.jpg" alt="Banner Image" style="width: 100%; height: auto;">
@@ -20,9 +93,12 @@
         <h1>{{ site.title }}</h1>
         <p>{{ site.description }}</p>
 
+        <!-- Hamburger Icon for Mobile -->
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+
         <!-- Navigation -->
         <nav>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
                 <li><a href="{{ site.baseurl }}/RRCR/">RRCR</a></li>
                 <li><a href="{{ site.baseurl }}/PJPA/">PJPA</a></li>
@@ -56,5 +132,13 @@
             <p id="footer-year">All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript for Navigation Toggle -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
