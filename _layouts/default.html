@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="{{ site.logo }}" alt="Site Logo" style="width: 100px; height: 100px;">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+        <nav>
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/RRCR/">RRCR</a></li>
+                <li><a href="{{ site.baseurl }}/PJPA/">PJPA</a></li>
+                <li><a href="{{ site.baseurl }}/DLA/">DLA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>© {{ site.author.name }} - Follow on <a href="{{ site.author.social.instagram }}">Instagram</a></p>
+    </footer>
+</body>
+</html>
