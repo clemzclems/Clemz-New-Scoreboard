@@ -13,29 +13,56 @@ body {
     background-color: #333;
     color: white;
 }
+
 .nav-menu li a {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
+
 .nav-menu li a:hover {
     background-color: #555;
+}
+
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto;  /* Horizontal scroll if content overflows */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    overflow-x: auto;  /* Ensure no overflow issues */
 }
+
 th, td {
     padding: 10px;
     border: 1px solid #333;
     text-align: center;
 }
+
 th {
     background-color: #007ACC;
     color: #fff;
 }
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
-} 
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
