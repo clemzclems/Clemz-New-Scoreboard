@@ -6,7 +6,6 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png" type="image/png">
-    <script src="{{ site.baseurl }}/assets/js/script.js" defer></script>
     <style>
         /* Responsive Navigation Styling */
         nav {
@@ -21,10 +20,6 @@
             margin-top: 10px;
         }
 
-        .nav-menu li {
-            display: inline;
-        }
-
         .nav-menu a {
             text-decoration: none;
             color: #333;
@@ -37,7 +32,7 @@
             color: #007bff;
         }
 
-        /* Hamburger Menu */
+        /* Hamburger Menu Styling */
         .hamburger {
             display: none;
             cursor: pointer;
@@ -45,6 +40,7 @@
             position: absolute;
             right: 20px;
             top: 10px;
+            z-index: 10;
         }
 
         @media (max-width: 768px) {
@@ -53,11 +49,12 @@
                 flex-direction: column;
                 background-color: #333;
                 position: absolute;
-                top: 40px;
+                top: 50px;
                 right: 20px;
                 width: 200px;
                 padding: 10px;
                 border-radius: 8px;
+                z-index: 9;
             }
 
             .nav-menu a {
@@ -79,81 +76,34 @@
             }
         }
 
-        /* Banner Section Styling */
-        .banner {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        /* Banner Image Styling */
-        .banner-img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        /* Banner Title Styling */
-        .site-title {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
+        /* Dark Mode Styling */
+        body[data-theme="dark"] {
+            background-color: #121212;
             color: white;
-            font-size: 3rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
 
-        /* Alert Message Styling */
-        .alert-message {
-            background-color: #ffcc00;
-            color: black;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-
-        /* Dark Mode Toggle Button Styling */
         #dark-mode-toggle {
             padding: 10px 20px;
             background-color: #007bff;
             color: white;
             border: none;
             border-radius: 5px;
-            font-size: 1rem;
             cursor: pointer;
+            margin: 10px;
             transition: background-color 0.3s;
         }
 
         #dark-mode-toggle:hover {
             background-color: #0056b3;
         }
-
-        /* Dark Mode Styles */
-        body[data-theme="dark"] {
-            background-color: #121212;
-            color: white;
-        }
-
-        body[data-theme="dark"] .alert-message {
-            background-color: #333;
-            color: white;
-        }
     </style>
 </head>
-<body data-theme="light"> <!-- Default Theme -->
+<body data-theme="light">
 
 <!-- Dark Mode Toggle Button -->
 <button id="dark-mode-toggle">Toggle Dark Mode</button>
 
-<!-- Alert Message -->
-<div class="alert-message">
-    Welcome to Clemz Student Scoreboard! Stay updated with the latest results.
-</div>
-
-<!-- Hamburger Menu -->
+<!-- Hamburger Menu Icon -->
 <div class="hamburger" onclick="toggleMenu()">☰</div>
 
 <!-- Navigation Menu -->
@@ -172,28 +122,19 @@
     {{ content }}
 </main>
 
-<!-- Footer Section -->
-<footer>
-    <div class="author-info">
-        <img src="{{ site.baseurl }}/assets/images/author.jpg" alt="Author Image" style="width: 80px; height: 80px; border-radius: 50%;">
-        <p>© {{ site.author.name }} - Follow on 
-            <a href="{{ site.author.social.instagram }}">Instagram</a> | 
-            <a href="{{ site.author.social.youtube }}">YouTube</a>
-        </p>
-        <p id="footer-year">All rights reserved.</p>
-    </div>
-</footer>
-
-<!-- JavaScript for Navigation Toggle -->
+<!-- JavaScript for Hamburger and Dark Mode -->
 <script>
+    // Toggle Hamburger Menu
     function toggleMenu() {
         const navMenu = document.getElementById('nav-menu');
         navMenu.classList.toggle('active');
     }
 
-    // Dark Mode Toggle Functionality
-    document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-        document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+        const body = document.body;
+        body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
     });
 </script>
 
