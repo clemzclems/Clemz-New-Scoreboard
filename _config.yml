@@ -1,15 +1,30 @@
 # Site Configuration
 title: "Clemz Student Scoreboard"
 description: "Mathematics and Science Scoreboard for RRCR, PJPA, and DLA."
-baseurl: "/Clemz-New-Scoreboard"  # Repository name
-url: "https://clemzclems.github.io"  # GitHub Pages base URL
+baseurl: "/Clemz-New-Scoreboard"  # Ensure this matches the repository name
+url: "https://clemzclems.github.io"  # GitHub Pages URL
 markdown: kramdown
-theme: minima  # Optional, but good to specify a theme
+theme: minima
 
 # Site Branding
-logo: "/assets/images/logo.png"         # School logo (200x200px recommended)
-favicon: "/assets/images/favicon.png"   # Favicon (32x32px recommended)
-banner: "/assets/images/banner.jpg"     # Header banner (1200x400px recommended)
+logo: "{{ site.baseurl }}/assets/images/logo.png"       # Correct image path
+favicon: "{{ site.baseurl }}/assets/images/favicon.png"  # Correct image path
+banner: "{{ site.baseurl }}/assets/images/banner.jpg"    # Correct image path
+
+# Beautiful Author Info
+author:
+  name: "Clemz Clems"
+  email: "your-email@example.com"
+  bio: "Innovative educator passionate about simplifying Mathematics and Science for young minds."
+  photo: "{{ site.baseurl }}/assets/images/author.jpg"  # Correct image path
+  social:
+    facebook: "https://www.facebook.com/profile.php?id=100004792087165"
+    instagram: "https://www.instagram.com/clemzclems/"
+    twitter: "https://x.com/DrClem88"
+    youtube: "https://www.youtube.com/@MathCraft3D"
+    paypal: "https://paypal.me/clemzclems?country.x=AE&locale.x=en_US"
+    formspree: "https://formspree.io/f/mwpvdgeo"
+
 # Collections
 collections:
   posts:
