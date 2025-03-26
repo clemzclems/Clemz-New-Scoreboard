@@ -10,19 +10,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        /* Default Theme - Light */
-        body[data-theme="light"] {
             background-color: #f4f4f9;
             color: #333;
-        }
-
-        /* Dark Mode */
-        body[data-theme="dark"] {
-            background-color: #121212;
-            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         /* Header */
@@ -83,31 +73,14 @@
                 color: #ffcc00;
             }
         }
-
-        /* Dark Mode Toggle */
-        #dark-mode-toggle {
-            padding: 8px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-            transition: background-color 0.3s;
-        }
-
-        #dark-mode-toggle:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
-<body data-theme="light">
+<body>
 
 <!-- Header Section -->
 <header>
     <h1>My Unique Classroom Results</h1>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <button id="dark-mode-toggle">Toggle Dark Mode</button>
 </header>
 
 <!-- Navigation Menu -->
@@ -127,20 +100,13 @@
     {{ content }}
 </main>
 
-<!-- JavaScript for Hamburger and Dark Mode -->
+<!-- JavaScript for Hamburger -->
 <script>
     // Toggle Hamburger Menu
     function toggleMenu() {
         const navMenu = document.getElementById('nav-menu');
         navMenu.classList.toggle('active');
     }
-
-    // Dark Mode Toggle
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    darkModeToggle.addEventListener('click', () => {
-        const body = document.body;
-        body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
-    });
 </script>
 
 </body>
