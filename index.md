@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to Rosamby Royal Classroom Results  
+# Welcome to Our Unique Classroom Results  
 Explore the results of different classes for the following schools:
 
 ---
