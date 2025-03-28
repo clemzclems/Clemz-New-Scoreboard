@@ -2,10 +2,14 @@
 :root {
     --header-bg-light: #4dc3ff;
     --header-bg-dark: #005fa3;
-    --text-light: #333;
-    --text-dark: white;
+    --header-text-light: white;
+    --header-text-dark: white;
+    --text-light: black; /* Black text in Light Mode */
+    --text-dark: white;  /* White text in Dark Mode */
     --row-bg-light: #f2f2f2;
     --row-bg-dark: #222;
+    --border-light: black; /* Border same as text */
+    --border-dark: white;  /* Border same as text in Dark Mode */
 }
 
 /* Default Light Mode */
@@ -24,19 +28,21 @@ body.dark-mode {
     color: var(--text-dark);
 }
 
-/* Header */
-h2 {
+/* Header & Footer */
+h2, footer {
     text-align: center;
     background-color: var(--header-bg-light);
-    color: white;
+    color: var(--header-text-light); /* White text */
     padding: 10px;
     margin: 0;
     transition: background 0.3s;
 }
 
-/* Dark Mode Header */
-body.dark-mode h2 {
+/* Dark Mode Header & Footer */
+body.dark-mode h2,
+body.dark-mode footer {
     background-color: var(--header-bg-dark);
+    color: var(--header-text-dark);
 }
 
 /* Table */
@@ -45,10 +51,19 @@ table {
     border-collapse: collapse;
 }
 
+/* Light Mode Table */
 th, td {
-    border: 1px solid #ddd;
+    color: var(--text-light);
+    border: 1px solid var(--border-light); /* Border same as text */
     padding: 8px;
     text-align: left;
+}
+
+/* Dark Mode Table */
+body.dark-mode th, 
+body.dark-mode td {
+    color: var(--text-dark);
+    border: 1px solid var(--border-dark); /* Border same as text */
 }
 
 /* Alternating Row Colors */
@@ -64,11 +79,12 @@ body.dark-mode tr:nth-child(even) {
 /* Dark Mode Table Headers */
 th {
     background-color: var(--header-bg-light);
-    color: white;
+    color: var(--header-text-light);
 }
 
 body.dark-mode th {
     background-color: var(--header-bg-dark);
+    color: var(--header-text-dark);
 }
 
 /* Toggle Button */
