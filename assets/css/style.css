@@ -1,9 +1,18 @@
 /* Root variables for easy customization */
 :root {
-    --header-footer-bg-light: #0066cc;  /* Pen Blue */
-    --header-footer-bg-dark: #003366;  /* Darker Blue */
-    --header-footer-text-light: white;
-    --header-footer-text-dark: white;
+    /* Header Colors */
+    --header-bg-light: #0066cc;  /* Pen Blue */
+    --header-bg-dark: #003366;  /* Darker Blue */
+    --header-text-light: white;
+    --header-text-dark: white;
+
+    /* Footer Colors */
+    --footer-bg-light: #0066cc;  /* Pen Blue */
+    --footer-bg-dark: #003366;  /* Darker Blue */
+    --footer-text-light: white;
+    --footer-text-dark: white;
+
+    /* General Text & Table Colors */
     --text-light: black;  /* Black text in Light Mode */
     --text-dark: white;   /* White text in Dark Mode */
     --row-bg-light: #f2f2f2;
@@ -28,22 +37,38 @@ body.dark-mode {
     color: var(--text-dark);
 }
 
-/* Header & Footer (Same Styling) */
-h2, footer {
+/* Header */
+h2 {
     text-align: center;
-    background-color: var(--header-footer-bg-light); /* Light Mode */
-    color: var(--header-footer-text-light);
+    background-color: var(--header-bg-light);
+    color: var(--header-text-light);
     padding: 10px;
     margin: 0;
-    font-size: 1.2rem; /* Adjust header/footer text size */
+    font-size: 1.2rem;
     transition: background 0.3s;
 }
 
-/* Dark Mode Header & Footer */
-body.dark-mode h2,
+/* Dark Mode Header */
+body.dark-mode h2 {
+    background-color: var(--header-bg-dark);
+    color: var(--header-text-dark);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--footer-bg-light);
+    color: var(--footer-text-light);
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+/* Dark Mode Footer */
 body.dark-mode footer {
-    background-color: var(--header-footer-bg-dark); /* Dark Mode */
-    color: var(--header-footer-text-dark);
+    background-color: var(--footer-bg-dark);
+    color: var(--footer-text-dark);
 }
 
 /* Table */
@@ -81,15 +106,33 @@ body.dark-mode tr:nth-child(even) {
     background-color: var(--row-bg-dark) !important;
 }
 
-/* Dark Mode Table Headers */
+/* Light Mode Table Headers */
 th {
-    background-color: var(--header-footer-bg-light);
-    color: var(--header-footer-text-light);
+    background-color: var(--header-bg-light);
+    color: var(--header-text-light);
 }
 
+/* Dark Mode Table Headers */
 body.dark-mode th {
-    background-color: var(--header-footer-bg-dark);
-    color: var(--header-footer-text-dark);
+    background-color: var(--header-bg-dark);
+    color: var(--header-text-dark);
+}
+
+/* Form Submit Button */
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+input[type="submit"]:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 /* Responsive Fix */
@@ -101,7 +144,7 @@ body.dark-mode th {
 
 /* Toggle Button */
 button {
-    background-color: var(--header-footer-bg-light);
+    background-color: var(--header-bg-light);
     color: white;
     border: none;
     padding: 10px;
@@ -117,7 +160,7 @@ button:hover {
 
 /* Dark Mode Button */
 body.dark-mode button {
-    background-color: var(--header-footer-bg-dark);
+    background-color: var(--header-bg-dark);
 }
 
 body.dark-mode button:hover {
