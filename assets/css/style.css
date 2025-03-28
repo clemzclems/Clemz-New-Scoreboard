@@ -218,8 +218,8 @@ footer {
 /* Dark Mode Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #333;
-    color: #dcdcdc;
+    background-color: black;
+    color: white;
     transition: background 0.3s, color 0.3s;
 }
 
