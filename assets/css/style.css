@@ -216,10 +216,44 @@ footer {
 }
 
 /* Dark Mode Styling */
-[data-theme="dark"] {
+body {
+    font-family: Arial, sans-serif;
     background-color: #333;
     color: #dcdcdc;
+    transition: background 0.3s, color 0.3s;
 }
+
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #ffa500;
+    color: black;
+}
+
+body.dark-mode button:hover {
+    background-color: #cc8400;
+}
+
+
+
 
 [data-theme="dark"] header {
     background-color: #444;
