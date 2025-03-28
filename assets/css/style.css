@@ -1,17 +1,31 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
+    transition: background 0.3s, color 0.3s;
 }
 
+/* Header Styling */
+header {
+    background-color: #4dc3ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Navigation Menu */
 .nav-menu {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: space-around;
     background-color: #333;
-    color: white;
 }
 
 .nav-menu li a {
@@ -24,6 +38,7 @@ body {
     background-color: #555;
 }
 
+/* Container Styling */
 .container {
     max-width: 90%;
     margin: 20px auto;
@@ -31,14 +46,14 @@ body {
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow-x: auto;  /* Horizontal scroll if content overflows */
+    overflow-x: auto; /* Horizontal scroll if content overflows */
 }
 
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    overflow-x: auto;  /* Ensure no overflow issues */
 }
 
 th, td {
@@ -56,206 +71,42 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-@media (max-width: 768px) {
-    th, td {
-        padding: 8px;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-:root {
-    --header-bg-light: #4dc3ff;
-    --header-bg-dark: #005fa3;
-    --header-text-light: white;
-    --header-text-dark: white;
-}
-
-header {
-    background-color: var(--header-bg-light);
-    color: var(--header-text-light);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: background 0.3s, color 0.3s;
-}
-
-body.dark-mode header {
-    background-color: var(--header-bg-dark);
-    color: var(--header-text-dark);
-}
-
-header h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-}
-
-header p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover, .active {
-    background-color: #0077cc;
-}
-
-main {
-    padding: 20px;
-    background-color: #ffffff;
-    min-height: 70vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #4dc3ff;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-weight: bold;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Scroll-to-Top Button */
-#scroll-top {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-#scroll-top:hover {
-    background-color: #005fa3;
-    transform: scale(1.1);
-}
-
-/* Announcement Modal */
-#announcement-modal {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-}
-
-#announcement-modal h3 {
-    margin-top: 0;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-#close-modal {
-    background-color: #0077cc;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#close-modal:hover {
-    background-color: #005fa3;
-}
-
-/* Responsive Navigation */
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    transition: max-height 0.3s;
-    overflow: hidden;
-    max-height: 60px;
-}
-
-.nav-menu.show {
-    max-height: 300px;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-menu {
-        max-height: 0;
-    }
-}
-
-/* Dark Mode Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    transition: background 0.3s, color 0.3s;
-}
-
-button {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #005fa3;
-}
-
-/* Dark Mode Styles */
+/* Light and Dark Mode Styling */
 body.dark-mode {
     background-color: #121212;
     color: white;
 }
 
+/* Ensure text elements are visible in dark mode */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3,
+body.dark-mode h4, body.dark-mode h5, body.dark-mode h6,
+body.dark-mode p, body.dark-mode a, body.dark-mode span,
+body.dark-mode th, body.dark-mode td {
+    color: #e0e0e0 !important;
+}
+
+/* Table in Dark Mode */
+body.dark-mode th {
+    background-color: #333 !important;
+}
+
+body.dark-mode tr:nth-child(even) {
+    background-color: #222 !important;
+}
+
+/* Dark Mode Header */
+body.dark-mode header {
+    background-color: #005fa3;
+    color: white;
+}
+
+/* Dark Mode Footer */
+body.dark-mode footer {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+/* Dark Mode Button Styling */
 body.dark-mode button {
     background-color: #ffa500;
     color: black;
@@ -265,77 +116,7 @@ body.dark-mode button:hover {
     background-color: #cc8400;
 }
 
-
-/* Ensure all text elements are visible in dark mode */
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6,
-body.dark-mode p,
-body.dark-mode a,
-body.dark-mode span,
-body.dark-mode th,
-body.dark-mode td {
-    color: #e0e0e0 !important;
-}
-
-/* Ensure table headers and rows are visible */
-body.dark-mode th {
-    background-color: #333 !important;
-}
-
-body.dark-mode tr:nth-child(even) {
-    background-color: #222 !important;
-}
-
-
-
-
-
-
-
-[data-theme="dark"] header {
-    background-color: #444;
-    color: #e0e0e0;
-}
-
-[data-theme="dark"] footer {
-    background-color: #444;
-    color: #e0e0e0;
-}
-
-[data-theme="dark"] nav ul li a {
-    color: #e0e0e0;
-}
-
-[data-theme="dark"] main {
-    background-color: #222;
-    color: #e0e0e0;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-[data-theme="dark"] #scroll-top {
-    background-color: #555;
-    color: #fff;
-}
-
-[data-theme="dark"] #announcement-modal {
-    background-color: #444;
-    color: #ddd;
-}
-
-[data-theme="dark"] #close-modal {
-    background-color: #777;
-}
-
-/* Input and Form Validation */
+/* Input Fields */
 input, textarea {
     border: 2px solid #ccc;
     padding: 8px;
@@ -356,4 +137,16 @@ input[required]:invalid {
 
 input[required]:valid {
     border-color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
 }
