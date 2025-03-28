@@ -124,4 +124,33 @@
 
         section#dla {
             background-color: #e9ffe6;
+
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#rrcr">RRCR</a></li>
+            <li><a href="#pjpa">PJPA</a></li>
+            <li><a href="#dla">DLA</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><main>
+    <section id="rrcr">
+        <h2>Rosamby Royal Classroom (RRCR)</h2>
+        <p>Explore available results for RRCR.</p>
+    </section>
+    <section id="pjpa">
+        <h2>Parent & Joy Pride Academy (PJPA)</h2>
+        <p>Explore available results for PJPA.</p>
+    </section>
+    <section id="dla">
+        <h2>Definite Land Academy (DLA)</h2>
+        <p>Explore available results for DLA.</p>
+    </section>
+</main>
+
+
+
+
        
