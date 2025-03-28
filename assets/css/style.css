@@ -1,7 +1,7 @@
 /* Root variables for easy customization */
 :root {
-    --header-bg-light: #4dc3ff;
-    --header-bg-dark: #005fa3;
+    --header-bg-light: #0066cc;  /* Pen Blue */
+    --header-bg-dark: #003366;  /* Darker Blue */
     --header-text-light: white;
     --header-text-dark: white;
     --text-light: black; /* Black text in Light Mode */
@@ -31,17 +31,18 @@ body.dark-mode {
 /* Header & Footer */
 h2, footer {
     text-align: center;
-    background-color: var(--header-bg-light);
-    color: var(--header-text-light); /* White text */
+    background-color: var(--header-bg-light); /* Pen Blue */
+    color: var(--header-text-light);
     padding: 10px;
     margin: 0;
+    font-size: 1.2rem; /* Adjust header text size */
     transition: background 0.3s;
 }
 
 /* Dark Mode Header & Footer */
 body.dark-mode h2,
 body.dark-mode footer {
-    background-color: var(--header-bg-dark);
+    background-color: var(--header-bg-dark); /* Darker Blue */
     color: var(--header-text-dark);
 }
 
@@ -49,6 +50,7 @@ body.dark-mode footer {
 table {
     width: 100%;
     border-collapse: collapse;
+    max-width: 100%;
 }
 
 /* Light Mode Table */
@@ -57,6 +59,9 @@ th, td {
     border: 1px solid var(--border-light); /* Border same as text */
     padding: 8px;
     text-align: left;
+    font-size: 0.9rem; /* Prevent oversized text */
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 /* Dark Mode Table */
@@ -87,6 +92,13 @@ body.dark-mode th {
     color: var(--header-text-dark);
 }
 
+/* Responsive Fix */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 0.85rem; /* Smaller font for small screens */
+    }
+}
+
 /* Toggle Button */
 button {
     background-color: var(--header-bg-light);
@@ -95,10 +107,11 @@ button {
     padding: 10px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
+    font-size: 0.9rem;
 }
 
 button:hover {
-    background-color: #0096c7;
+    background-color: #0055aa;
     transform: scale(1.05);
 }
 
@@ -108,5 +121,5 @@ body.dark-mode button {
 }
 
 body.dark-mode button:hover {
-    background-color: #003366;
+    background-color: #002244;
 }
