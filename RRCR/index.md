@@ -1,9 +1,9 @@
 ---
 layout: default
-title: RRCR Results
+title: Rosamby Royal Classroom (RRCR) Results
 ---
 
-# RRCR Results
+# Rosamby Royal Classroom (RRCR) Results
 
 Welcome to the **RRCR Results** page. Below, you can find the available results for different subjects and classes.
 
@@ -15,8 +15,7 @@ Welcome to the **RRCR Results** page. Below, you can find the available results 
 - [SSS 2 Mathematics]({{ site.baseurl }}/RRCR/sss2-mathematics)
 - [SSS 1 Physics]({{ site.baseurl }}/RRCR/sss1-physics)
 - [SSS 2 Physics]({{ site.baseurl }}/RRCR/sss2-physics)
-)
 
-Click on the links above to view the results.
+Click on any subject to view the results.
 
 [Back to Home]({{ site.baseurl }}/)
