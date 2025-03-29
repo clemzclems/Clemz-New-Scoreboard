@@ -1,6 +1,6 @@
 ---
 title: JSS 1 Mathematics
-layout: home
+layout: default 
 ---
 
 # JSS 1 Mathematics  
